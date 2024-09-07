@@ -1,14 +1,21 @@
-﻿namespace MauiApp1
+﻿
+using Microsoft.Maui.Controls.Shapes;
+
+namespace MauiApp1
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
-
+      
         public MainPage()
         {
             InitializeComponent();
         }
 
+        private void DrawButton_Clicked(object sender, EventArgs e)
+        {
+            int numeroSorteado = new Random().Next(1, 7);
+            ResultLabel.Text = numeroSorteado.ToString();
+        }
     }
 
 }

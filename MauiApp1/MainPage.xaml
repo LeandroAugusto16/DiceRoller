@@ -14,7 +14,8 @@
                 SemanticProperties.HeadingLevel="Level1" Margin="50"/>
 
             <Label
-                Text="0"
+                x:Name="ResultLabel"
+                Text="6"
                 Style="{StaticResource SubHeadline}"
                 SemanticProperties.HeadingLevel="Level2" FontSize="70"  />
 
@@ -35,7 +36,9 @@
                 <Button
                 x:Name="DrawButton"
                 Text="ROLAR O DADO" 
-                HorizontalOptions="Center" WidthRequest="200"/>
+                HorizontalOptions="Center" WidthRequest="200"
+                    Clicked="DrawButton_Clicked"
+                    />
         </VerticalStackLayout>
     </ScrollView>
 
